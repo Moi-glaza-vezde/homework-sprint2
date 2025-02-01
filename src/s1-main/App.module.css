@@ -1,0 +1,53 @@
+
+.App {
+    --header_height: 60px;
+    padding-top: 130px;
+}
+
+.hw {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: "Montserrat", serif;
+
+    padding: 0 70px;
+    position: relative;
+    /*outline: 1px solid red;*/
+
+}
+
+.hw:before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 1280px;
+    background-color: #D9D9D9;
+    left: 0px;
+    top:-24px;
+}.hw:after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 1280px;
+    background-color: #D9D9D9;
+    left: 0px;
+    /*top:34px;*/
+    bottom: -34px;
+}
+
+.hwTitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    /*line-height: 26.82px;*/
+    text-align: left;
+
+    margin-left: 195px;
+}
+
+.hwMessagesBox {
+    margin-top: 34px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}

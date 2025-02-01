@@ -1,0 +1,51 @@
+.sendForm {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.textarea {
+    width: 976px;
+    padding: 12px 0 12px 24px;
+    border-radius: 20px;
+    resize: none;
+    overflow-y: hidden;
+    background-color: #F5F7FB;
+    border: 0;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    font-size: 14px;
+    color: #00000099
+}
+
+.button {
+    border: 0;
+
+    width: 120px;
+    height: 40px;
+    background-color: #0066CC;
+    border-radius: 20px;
+    color: #FFFFFF;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+
+
+
+
+}
+
+.button:hover {
+    background-color: #03376c;
+
+
+}
+
+.button:active {
+    background-color: #b5dbff;
+
+}
