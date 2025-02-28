@@ -1,20 +1,24 @@
 
 .App {
     --header_height: 60px;
-    padding-top: 130px;
+    /*padding-top: 130px;*/
 }
 
 .hw {
     max-width: 1280px;
     margin: 0 auto;
+/*margin-bottom: 50px;*/
     font-family: "Montserrat", serif;
 
-    padding: 0 70px;
+    padding: 0px 70px;
     position: relative;
     /*outline: 1px solid red;*/
 
 }
-
+.container{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
 .hw:before {
     position: absolute;
     content: "";
@@ -42,7 +46,7 @@
     font-weight: 600;
     /*line-height: 26.82px;*/
     text-align: left;
-
+/*margin-top: 50px;*/
     margin-left: 195px;
 }
 
