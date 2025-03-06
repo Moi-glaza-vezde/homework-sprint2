@@ -1,5 +1,19 @@
+
+.hwTitle {
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 71px;
+    padding-left: 70px;
+
+}
+
+
 .buttonsContainer {
+
+    display: flex;
+    gap: 24px;
 }
 
 .editableSpanContainer {
+    padding-top: 32px;
 }
