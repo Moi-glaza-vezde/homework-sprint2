@@ -1,15 +1,59 @@
 .radio {
+    width: 0;
+
 }
 
+
 .radio::before {
+
+
 }
 
 
 .radio:checked::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    left: 5.5px;
+    top: 3px;
 }
 
 .label {
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    gap: 30px;
+    position: relative;
+    align-items: center;
+
+}
+
+.label::before {
+
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid black;
+    border-radius: 50%;
+    position: absolute;
+}
+.label span{
+
+
+    font-weight: 400;
+    font-size: 16px;
+
+
 }
 
 .options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
