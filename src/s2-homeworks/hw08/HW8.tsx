@@ -6,7 +6,7 @@ import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
 import User from './User'
 
 /*
-* 1 - дописать типы и логику (сортировка по имени, фильтрация по совершеннолетию) homeWorkReducer, проверить тестом
+* 1 - дописать типы и логику (сортировка по имени, фильтрация по совершеннолетию) homeWorkReducer, проверить тестом +
 * 2 - дописать компоненту User
 * 3 - сделать стили в соответствии с дизайном
 * */
@@ -54,7 +54,7 @@ const HW8 = () => {
     }
 
     return (
-        <div id={'hw3'}>
+        <div id={'hw3'} className={s.wrapper}>
             <div className={s2.hwTitle}>Homework #8</div>
             <div className={s2.hw}>
                 <div className={s.container}>
@@ -62,21 +62,21 @@ const HW8 = () => {
                         <SuperButton
                             id={'hw8-button-up'}
                             onClick={sortUp}
-                            xType={currentSort === 'up' ? '' : 'secondary'}
+                            xType={currentSort === 'up' ? 'default' : 'secondary'}
                         >
                             Sort up
                         </SuperButton>
                         <SuperButton
                             id={'hw8-button-down'}
                             onClick={sortDown}
-                            xType={currentSort === 'down' ? '' : 'secondary'}
+                            xType={currentSort === 'down' ? 'default' : 'secondary'}
                         >
                             Sort down
                         </SuperButton>
                         <SuperButton
                             id={'hw8-button-18'}
                             onClick={check18}
-                            xType={currentSort === '18' ? '' : 'secondary'}
+                            xType={currentSort === '18' ? 'default' : 'secondary'}
                         >
                             Check 18+
                         </SuperButton>
@@ -84,9 +84,9 @@ const HW8 = () => {
 
                     <table id={'hw8-users'} className={s.users}>
                         <thead className={s.thead}>
-                        <tr>
-                            <td className={s.nameCol}>Name</td>
-                            <td className={s.ageCol}>Age</td>
+                        <tr >
+                            <th className={s.nameCol + ' ' + s.nameColTitle}>Name</th>
+                            <th className={s.ageCol}>Age</th>
                         </tr>
                         </thead>
 

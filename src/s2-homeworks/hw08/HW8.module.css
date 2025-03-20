@@ -1,23 +1,65 @@
+
+.wrapper {
+    margin-top: 234px;
+}
+
 .item {
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
 }
 
 .item:last-of-type {
 }
 
 .users {
+    width: 100%;
+    border-collapse: collapse;
+
+
 }
 
 .buttonsContainer {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    justify-content: end;
+    margin-bottom: 18px;
 }
 
 .container {
+    width: 606px;
+
+
 }
 
+
+
 .thead {
+
+    background: rgba(229, 229, 229, 1);
+    /*display: flex;*/
+    /*width: 606px;*/
 }
 
 .nameCol {
+    text-align: left;
+    width: 50%;
+    font-weight: 300;
+    padding: 17px;
+    font-size: 14px;
+
 }
 
+.nameColTitle {
+
+font-weight: bold;
+    padding: 10px 0 10px 17px;
+}
+
+
 .ageCol {
+    text-align: left;
+    font-weight: 700;
+    width: 50%;
+    font-size: 14px;
+
 }
