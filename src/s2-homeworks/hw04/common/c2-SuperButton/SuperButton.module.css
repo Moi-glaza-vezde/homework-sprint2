@@ -69,4 +69,6 @@
 .button:disabled {
     background: #80A5CC;
     color: #8096AD;
+    color: white;
+
 }
