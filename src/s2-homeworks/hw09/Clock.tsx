@@ -9,7 +9,7 @@ function Clock() {
     const [date, setDate] = useState<Date>(new Date(restoreState('hw9-date', Date.now())))
     const [show, setShow] = useState<boolean>(false)
     const intervalID = useRef<ReturnType<typeof setInterval> | null>(null);
-
+    const [isRunning, setIsRunning] = useState(false)
 
 
     const start = () => {
@@ -17,6 +17,8 @@ function Clock() {
             intervalID.current = setInterval(() => {
                 setDate(new Date());
             }, 1000);
+            setIsRunning(true);
+
         }
 
     }
@@ -27,6 +29,8 @@ function Clock() {
         if (intervalID.current !== null) {
             clearInterval(intervalID.current);
             intervalID.current = null;
+            setIsRunning(false);
+
         }
     }
 
