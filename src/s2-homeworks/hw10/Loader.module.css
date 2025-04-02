@@ -1,3 +1,36 @@
+
 .loader {
     /*свг и/или анимация*/
+
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    /*background: conic-gradient(from 90deg, transparent 70deg,  #7b61ff 270deg);*/
+    background: conic-gradient(from 90deg, transparent 70deg, #512DE4 270deg);
+    mask: radial-gradient(farthest-side, transparent 79%, black 61%);
+    /*-webkit-mask: radial-gradient(farthest-side, transparent 60%, black 61%);*/
+    position: relative;
+    animation: spin 1.2s linear infinite;
+}
+
+.loader:after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 95%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    /*background-color: #7b61ff;*/
+    background-color: #512DE4;
+    /*background-color: #050505;*/
+    border-radius: 50%;
+    transform: translateX(-50%);
+    /*box-shadow: 0 0 10px #bfaeff;*/
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
 }

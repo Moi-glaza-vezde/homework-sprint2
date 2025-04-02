@@ -14,6 +14,9 @@ function Clock() {
     const stringTime1 = date.toLocaleTimeString('ru-RU').slice(0, 5)
     console.log(stringTime1)
     const start = () => {
+
+        // пишут студенты // запустить часы (должно отображаться реальное время, а не +1)
+
         if (intervalID.current === null) {
             intervalID.current = setInterval(() => {
                 setDate(new Date());
@@ -50,9 +53,7 @@ function Clock() {
 
 //Время
     const format = (num: number) => (num < 10 ? '0' + num : num)
-    const hours = date.getHours();
-    const minutes = date.getMinutes();
-    const seconds = date.getSeconds();
+
 
     // Дата
 
