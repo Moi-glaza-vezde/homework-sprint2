@@ -19,6 +19,7 @@ type SuperInputTextPropsType = Omit<DefaultInputPropsType, 'type'> & {
     onEnter?: () => void
     error?: ReactNode
     spanClassName?: string
+
 }
 
 const SuperInputText: React.FC<SuperInputTextPropsType> = (
@@ -31,6 +32,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
         className,
         spanClassName,
         id,
+        onFocus,
 
         ...restProps // все остальные пропсы попадут в объект restProps
     }

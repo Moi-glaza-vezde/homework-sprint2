@@ -47,6 +47,7 @@ const HW13 = () => {
             .catch((e) => {
                 // дописать
 
+
                 if (x === null) {
                     setCode('Error!')
                     setImage(errorUnknown)
@@ -56,12 +57,27 @@ const HW13 = () => {
                     return
                 }
 
+                let statusCod = String(e.response.status)
+                const errImg:Record<string, string> = {
+                    '400': error400,
+                    '500': error500
+                }
+
+                if (x === false || x === undefined) {
+                    setCode(`Код ${e.response.status}!`)
+                    setImage(errImg[statusCod] || errorUnknown)
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
+                    console.log(e.response.status)
+
+                }
 
                 if (!x) {
                     setCode('Код 500!')
                     setImage(error500)
                     setText(e.response.data.errorText)
                     setInfo(e.response.data.info)
+                    console.log(e.response.status)
 
                 }
                 if (x === undefined) {
@@ -73,9 +89,8 @@ const HW13 = () => {
                 }
 
 
-
             })
-            .finally(()=>{
+            .finally(() => {
 
                 setDisabled(false)
 
